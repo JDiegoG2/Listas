@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PerfilViewController" customModule="Personas" customModuleProvider="target">
+            <connections>
+                <outlet property="idPersonaLabel" destination="gFJ-6n-2HG" id="EYj-12-1BI"/>
+                <outlet property="nombrePersonaLabel" destination="OaP-Ak-J6h" id="ZLE-Ew-XNj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zo-8W-5Dh">
+                    <rect key="frame" x="20" y="64" width="374" height="21"/>
+                    <attributedString key="attributedText">
+                        <fragment content="DATOS DE REGISTRO">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-B2-FrI">
+                    <rect key="frame" x="20" y="105" width="66" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN6-tO-rfL">
+                    <rect key="frame" x="20" y="136" width="66" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="6bz-3X-wD5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFJ-6n-2HG">
+                    <rect key="frame" x="106" y="135.5" width="41.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-Ak-J6h">
+                    <rect key="frame" x="106" y="107" width="41.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OaP-Ak-J6h" firstAttribute="top" secondItem="9zo-8W-5Dh" secondAttribute="bottom" constant="20" id="3jk-0I-isi"/>
+                <constraint firstItem="UN6-tO-rfL" firstAttribute="top" secondItem="gUX-B2-FrI" secondAttribute="bottom" constant="10" id="60Z-Wx-AGb"/>
+                <constraint firstItem="9zo-8W-5Dh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7R4-cM-itf"/>
+                <constraint firstItem="gUX-B2-FrI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="C8y-hm-D1T"/>
+                <constraint firstItem="9zo-8W-5Dh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="MuX-Fs-CNO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9zo-8W-5Dh" secondAttribute="trailing" constant="20" id="Z0v-sE-bED"/>
+                <constraint firstItem="gUX-B2-FrI" firstAttribute="top" secondItem="9zo-8W-5Dh" secondAttribute="bottom" constant="20" id="a8s-sS-FKB"/>
+                <constraint firstItem="OaP-Ak-J6h" firstAttribute="leading" secondItem="gUX-B2-FrI" secondAttribute="trailing" constant="20" id="h05-f8-WGT"/>
+                <constraint firstItem="gFJ-6n-2HG" firstAttribute="top" secondItem="OaP-Ak-J6h" secondAttribute="bottom" constant="10" id="h6c-gJ-cih"/>
+                <constraint firstItem="UN6-tO-rfL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hnI-2h-jeg"/>
+                <constraint firstItem="gFJ-6n-2HG" firstAttribute="leading" secondItem="UN6-tO-rfL" secondAttribute="trailing" constant="20" id="y6t-Bv-Clj"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="72"/>
+        </view>
+    </objects>
+</document>

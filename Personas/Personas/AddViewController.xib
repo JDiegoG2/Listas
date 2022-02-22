@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="Personas" customModuleProvider="target">
+            <connections>
+                <outlet property="textDni" destination="Ae9-XB-A7g" id="IzE-Wd-KMM"/>
+                <outlet property="textName" destination="Etm-yI-R5t" id="0Wy-Ef-xwh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRESE DATOS " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxA-eC-cPB">
+                    <rect key="frame" x="20" y="64" width="374" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="M7i-53-wyW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uyk-A9-gMR">
+                    <rect key="frame" x="40" y="138" width="334" height="88"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Isd-bs-RE7">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8w-V7-Kj3">
+                                    <rect key="frame" x="0.0" y="0.0" width="75.5" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="4a5-XC-zSb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jose Rodriguez Quispe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etm-yI-R5t">
+                                    <rect key="frame" x="85.5" y="0.0" width="248.5" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="HSG-MG-XCM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kuB-zu-8sv">
+                            <rect key="frame" x="0.0" y="54" width="334" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDx-3v-IH2">
+                                    <rect key="frame" x="0.0" y="0.0" width="33" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="ZbI-Zj-HSs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="99669977" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ae9-XB-A7g">
+                                    <rect key="frame" x="43" y="0.0" width="291" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="fXL-wD-Oyt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUK-da-a7R">
+                    <rect key="frame" x="161" y="361" width="92" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="bzI-HC-3Mj"/>
+                        <constraint firstAttribute="width" constant="92" id="l9W-ep-Ix7"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Guardar"/>
+                    <connections>
+                        <action selector="guardarPersona:" destination="-1" eventType="touchUpInside" id="EZB-oS-mae"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pUK-da-a7R" firstAttribute="top" secondItem="uyk-A9-gMR" secondAttribute="bottom" constant="135" id="GQi-3f-nBe"/>
+                <constraint firstItem="uyk-A9-gMR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="JTy-pq-dai"/>
+                <constraint firstItem="uyk-A9-gMR" firstAttribute="top" secondItem="DxA-eC-cPB" secondAttribute="bottom" constant="10" id="Sqi-31-LBI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pUK-da-a7R" secondAttribute="trailing" constant="161" id="aP1-AB-Wse"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pUK-da-a7R" secondAttribute="bottom" constant="452" id="e1Y-op-th4"/>
+                <constraint firstItem="DxA-eC-cPB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gSH-x0-Dmh"/>
+                <constraint firstItem="DxA-eC-cPB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gjm-EN-56U"/>
+                <constraint firstItem="pUK-da-a7R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="161" id="piA-v1-DRg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uyk-A9-gMR" secondAttribute="trailing" constant="40" id="xdG-rc-c4y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DxA-eC-cPB" secondAttribute="trailing" constant="20" id="yrp-HI-ii3"/>
+            </constraints>
+            <point key="canvasLocation" x="82.608695652173921" y="72.991071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
