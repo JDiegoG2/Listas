@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  Personas
-//
-//  Created by Developer on 15/02/22.
-//
+
 
 import UIKit
 // Implementamos el protocolo AddPersonaDelegate
@@ -17,7 +12,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // se crea el objeto persona y se agrega la lista
-        let p1 = Persona(name: "Justina Capa Sicce", id: "4538882")
+        let p1 = Persona(name: "Justina Capa Sicce", id: "45388882")
         personasList.append(p1)
         
         personasList.append(Persona(name: "Jordan Capa Sixe", id: "3444213"))
@@ -61,7 +56,17 @@ extension HomeViewController: UITableViewDataSource {
         cell.detailTextLabel?.text = personasList[indexPath.row].id
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return.delete
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            tableView.beginUpdates()
+            personasList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+        }
+    }
 }
 
 //MARK: UITableViewDelegate

@@ -31,7 +31,7 @@ class AddViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         } else {
             // Prepare the popup assets
-            let title = "Error al ingresar datos"
+            let title = "ERROR"
             let message = "Ingrese los datos solicitados"
             let image = UIImage(named: "pexels-photo-103290")
 
@@ -39,7 +39,7 @@ class AddViewController: UIViewController {
             let popup = PopupDialog(title: title, message: message, image: image)
 
             // Create buttons
-            let buttonOne = CancelButton(title: "CANCEL") {
+            let buttonOne = CancelButton(title: "Cerrar") {
                 print("You canceled the car dialog.")
             }
 
