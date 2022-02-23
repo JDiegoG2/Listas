@@ -10,6 +10,7 @@ import PopupDialog
 
 
 
+
 class AddViewController: UIViewController {
 
     @IBOutlet weak var textName: UITextField!
@@ -19,6 +20,7 @@ class AddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
     }
     @IBAction func guardarPersona(_ sender: Any) {

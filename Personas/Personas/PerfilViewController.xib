@@ -55,6 +55,9 @@
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-Ak-J6h">
                     <rect key="frame" x="106" y="107" width="41.5" height="20.5"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" keyboardKey="YES" staticText="YES"/>
+                    </accessibility>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>

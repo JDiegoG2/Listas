@@ -1,12 +1,6 @@
-//
-//  PerfilViewController.swift
-//  Personas
-//
-//  Created by Developer on 16/02/22.
-//
 
 import UIKit
-//
+
 
 class PerfilViewController: UIViewController {
     
