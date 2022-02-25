@@ -1,9 +1,4 @@
-//
-//  AddViewController.swift
-//  Personas
-//
-//  Created by Developer on 16/02/22.
-//
+
 
 import UIKit
 import PopupDialog
@@ -13,6 +8,7 @@ import PopupDialog
 
 class AddViewController: UIViewController {
 
+
     @IBOutlet weak var textName: UITextField!
     @IBOutlet weak var textDni: UITextField!
     
@@ -20,6 +16,8 @@ class AddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        textName.delegate = self
+        textDni.delegate = self
 
 
     }
@@ -53,3 +51,17 @@ class AddViewController: UIViewController {
         }
     }
 }
+
+extension AddViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == textDni {
+            if range.location > 7 {
+                return false
+            }
+        }
+        return true
+    }
+}
+
+
+
