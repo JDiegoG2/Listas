@@ -12,6 +12,8 @@ class PerfilViewController: UIViewController {
 
 
     var persona: Persona?
+    var delegate: AddPersonaDelegate?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,5 +38,10 @@ class PerfilViewController: UIViewController {
             nombrePersonaLabel.text = miPersona.name
             idPersonaLabel.text = miPersona.id
         }
+    }
+
+    @IBAction func actualizarPersona(_ sender: Any) {
+        delegate?.guardarNuevaPersona(persona: persona!)
+        self.dismiss(animated: true, completion: nil)
     }
 }
