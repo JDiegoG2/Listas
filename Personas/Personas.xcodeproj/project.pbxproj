@@ -130,7 +130,6 @@
 				4E24CBBC9A0D0C88AAB289E8 /* Pods-Personas.debug.xcconfig */,
 				43C76DF2711611FA51089CA3 /* Pods-Personas.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

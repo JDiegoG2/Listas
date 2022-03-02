@@ -4,16 +4,25 @@ import UIKit
 
 class PerfilViewController: UIViewController {
     
-    @IBOutlet weak var nombrePersonaLabel: UILabel!
-    @IBOutlet weak var idPersonaLabel: UILabel!
+    @IBOutlet weak var nombrePersonaLabel: UITextField!
+    @IBOutlet weak var idPersonaLabel: UITextField!
+    @IBOutlet weak var edadPersonaLabel: UITextField!
+    @IBOutlet weak var numeroTelefonico: UITextField!
+    @IBOutlet weak var dirDomicilio: UITextField!
+
+
     var persona: Persona?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if persona != nil {
-          nombrePersonaLabel.text = persona!.name
+            nombrePersonaLabel.text = persona!.name
             idPersonaLabel.text = persona!.id
+            edadPersonaLabel.text = persona!.edad
+            numeroTelefonico.text = persona!.telefono
+            dirDomicilio.text = persona!.direccion
+
         }
         
         guard let miPersona = self.persona else {

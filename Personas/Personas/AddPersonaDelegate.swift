@@ -1,9 +1,7 @@
-//
-//  AddPersonaDelegate.swift
-//  Personas
-//
-//  Created by Developer on 17/02/22.
-//
+
+
+import UIKit
+import Foundation
 
 protocol AddPersonaDelegate {
     func guardarNuevaPersona(persona: Persona)

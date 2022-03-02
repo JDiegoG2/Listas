@@ -12,11 +12,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // se crea el objeto persona y se agrega la lista
-        let p1 = Persona(name: "Justina Capa Sicce", id: "45388882")
+        let p1 = Persona(name: "Oscar", id: "Ugarte", edad: "40", telefono: "992499929", direccion: "Trujillo - La Libertd ")
         personasList.append(p1)
         
-        personasList.append(Persona(name: "Jordan Capa Sixe", id: "3444213"))
-        personasList.append(Persona(name: "Daniel Ortiz Arévalo", id: "4429832"))
+        personasList.append(Persona(name: "Joaquin Ugarte Ugarte", id: "34442139", edad: "40", telefono: "992499929", direccion: "Trujillo - La Libertd " ))
+        personasList.append(Persona(name: "Isabel Ugarte Ugarte", id: "4429832", edad: "40", telefono: "992499929", direccion: "Trujillo - La Libertd "))
         
         // para  interactuar con las celdas se implementa el delegate
         tableView.delegate = self
